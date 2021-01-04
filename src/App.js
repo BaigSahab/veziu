@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.scss';
-import { AnalyticsComponent, HeaderComponent, SideNavComponent } from './components';
+import { AnalyticsComponent, FavouritesComponent, HeaderComponent, SideNavComponent } from './components';
 import { Route, Router, Switch } from 'react-router-dom';
 import history from './history';
 import EventsComponent from './components/Events';
+import DisputesComponent from './components/Disputes';
 
 function App() {
   return (
@@ -18,6 +18,12 @@ function App() {
             </Route>
             <Route exact path="/events">
               <EventsComponent />
+            </Route>
+            <Route exact path="/favourites">
+              <FavouritesComponent />
+            </Route>
+            <Route exact path="/disputes">
+              <DisputesComponent />
             </Route>
           </Switch>
         </div>

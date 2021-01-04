@@ -28,7 +28,7 @@ const SideNavComponent = () => {
                         <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
                     </SideNavMenu> */}
                     <NavLink exact to="/" activeClassName="active">
-                        <SideNavLink aria-current="page" renderIcon={Analytics16} href="javascript:void(0)">
+                        <SideNavLink renderIcon={Analytics16} href="javascript:void(0)">
                             Analytics
                         </SideNavLink>
                     </NavLink>
@@ -37,12 +37,16 @@ const SideNavComponent = () => {
                             Events
                         </SideNavLink>
                     </NavLink>
-                    <SideNavLink renderIcon={FavoriteFilled16}>
-                        Favourites
-                   </SideNavLink>
-                    <SideNavLink renderIcon={CurrencyDollar16}>
-                        Dispute
-                   </SideNavLink>
+                    <NavLink exact to="/favourites" activeClassName="active">
+                        <SideNavLink renderIcon={FavoriteFilled16}>
+                            Favourites
+                        </SideNavLink>
+                    </NavLink>
+                    <NavLink exact to="/disputes" activeClassName="active">
+                        <SideNavLink renderIcon={CurrencyDollar16}>
+                            Dispute
+                        </SideNavLink>
+                    </NavLink>
                 </SideNavItems>
                 <SideNavItems
                     className="bottomSideNav"
