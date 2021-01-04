@@ -1,0 +1,442 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/****************** Common Classes ********************/
+
+h2{
+  font-weight: 100;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.v-middle{
+  vertical-align: middle;
+}
+
+.d-block{
+  display : block !important;
+}
+
+.b-color{
+  background-color: #f4f4f4;
+}
+
+
+/************** Header CSS *******************/
+  
+.bx--header{
+  background-color: #ffffff !important;
+  border-bottom: none;
+  box-shadow: 0px 0px 2px black;
+}
+
+.logo{
+  width: 130px;
+  height: 0px;
+  border-style: inset;
+  border-bottom: 48px solid black;
+  border-right: 40px solid transparent;
+  float: left;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  // background-color: black;
+  color: white;
+  // padding: 11px 51px 11px 24px !important;
+  // font-size: 1.5rem !important;
+  // border-right: ;
+}
+
+.logo span {
+  top: 10px;
+  font-size: 27px;
+  // left: -47px;
+  color: white;
+  position: relative;
+  width: 93px;
+  height: 93px;
+  margin: 0px;
+  display: inline-block;
+}
+
+.header-icons svg {
+  fill: gray;
+}
+
+.header-side-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header-side-buttons div {
+  // margin: 0px 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.avatar{
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #2c2c2c;
+}
+
+/****************** Side Nav CSS *************************/
+
+a.bx--side-nav__link, .bx--side-nav a.bx--header__menu-item, .bx--side-nav .bx--header__menu-title[aria-expanded="true"] + .bx--header__menu{
+  height: 42px !important;
+  width: 50px !important;
+  outline: 0 !important;
+  box-shadow: 0 !important;
+}
+
+.bx--side-nav.bx--side-nav--rail:not(.bx--side-nav--fixed):hover, .bx--side-nav--expanded {
+  width: 3rem;
+}
+
+.bx--side-nav__navigation.bx--side-nav.bx--side-nav--rail.bx--side-nav--ux{
+  box-shadow: 0px 0px 5px black;
+}
+
+.bottomSideNav{
+  position: absolute; 
+  bottom: 20px;
+}
+
+.bx--side-nav__overlay{
+  display: none !important;
+}
+
+.active a.bx--side-nav__link::before, a.bx--side-nav__link--current::before {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  content: "";
+}
+.active a.bx--side-nav__link::before, a.bx--side-nav__link--current::before {
+  font-weight: 600;
+  background-color: #e5e5e5; 
+}
+
+/*********************** Analytics CSS *******************************/
+
+.analyticsCard{
+  height: 45vh;
+  width: 100%;
+  background-color: white;
+  padding:2vh;
+}
+
+.sessionsCard{
+  height: 45vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.sessionsCard h2{
+  padding: 2vh 2vh 0 2vh;
+}
+
+.sessionsCard div{
+  padding: 2vh 3vh 0 3vh;
+}
+
+.analyticsHeading{
+  font-weight: 100;
+}
+
+.summaryDetails{
+  padding: 0 0 0 10%;
+}
+
+.summaryDetails p{
+  color: gray;
+  font-size: 14px;
+  margin: 0 !important;
+}
+
+.summaryDetails > div{
+  margin: 20px;
+}
+
+
+.sessionDetails{
+  padding: 5% 0;
+}
+
+.chartjs-render-monitor {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.sessiontable table {
+  width: 100%;
+}
+
+.sessiontable {
+  padding: 0 !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sessiontable td{
+  width: 33.33%;
+  padding: 4px;
+  border: 3px solid #f5f5f5;
+  border-bottom: none;
+  line-height: 20px;
+}
+
+.sessiontable td:first-child{
+  border-left: none;
+}
+.sessiontable td:last-child{
+  border-right: none;
+}
+
+.paymentSection{
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+  padding:2vh;
+}
+
+.paymentDetails {
+  padding: 4vh 0 0 30px;
+}
+
+.paymentDetails table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.paymentDetails td {
+  width: 33.33%;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.paymentDetails td{
+  text-align: left;
+  text-indent: 20px;
+}
+
+.upcomingEventsCard{
+  display: flex; 
+  background-color: white;
+}
+
+.upcomingEventsCard .author{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 3px;
+}
+.upcomingEventsCard .author .avatar{
+  width: 22px;
+  height: 22px;
+  border: 0 !important;
+}
+
+.upcomingEventsCard .author p{
+  font-size: 11px;
+  margin-left: 6px;
+}
+.upcomingEventsCard .eventTime p{
+  width: 100%;
+  // flex-basis: 100%;
+  font-size: 10px;
+}
+
+.upcomingEventsCard .time span{
+  font-size: 10px;
+display: block; 
+}
+.upcomingEventsCard .time > span{
+  font-size: 20px;
+padding: 2px 0 0 4px;
+}
+.upcomingEventsCard .time{
+  display: flex;
+}
+
+.upcomingEventsCard .eventTime h4{
+  font-size: 20px;
+  text-align: center;
+}
+
+.upcomingHeading{
+  margin: 15px 0 0 0;
+}
+
+.cardsMargin{
+  margin: 15px 0;
+}
+
+.upcomingEventsCard .eventTime {
+  // display: flex;
+  // align-items: center;
+  padding: 20px 14px 14px;
+  // flex-wrap: wrap;
+  color: white;
+  background-color: #4b4b4b;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.upcomingEventsCardInner b{
+  font-weight: bold;
+}
+
+.upcomingEventsCardInner {
+  width: 100%;
+  padding: 4px 4px 4px 10px;
+}
+
+.upcomingEventsCardInner h4{
+  font-size: 16px;
+  height: 44px;
+  font-weight: bold;
+}
+
+.upcomingEventsCardInner > p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.upcomingEventsCard > img{
+  width: 70px;
+  height: 100px;
+}
+
+.dropdown{
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: auto;
+}
+
+.dropdown img {
+  height: 20px;
+  cursor: pointer;
+}
+.dropdown-items {
+  display: none;
+  position: absolute;
+  font-size: 10px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+  top: 26px;
+  right: 6px;
+}
+
+.drop-item {
+  background-color: #f4f4f4;
+  color: #525252;
+  padding: 7px 14px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.drop-item:nth-child(2) {
+  background-color: #e5e5e5;
+  color: #161616;
+}
+
+/***************** Events Style ******************/
+
+.bx--tabs--scrollable .bx--tabs--scrollable__nav-item--selected .bx--tabs--scrollable__nav-link, .bx--tabs--scrollable .bx--tabs--scrollable__nav-item--selected .bx--tabs--scrollable__nav-link:focus, .bx--tabs--scrollable .bx--tabs--scrollable__nav-item--selected .bx--tabs--scrollable__nav-link:active{
+    font-size: 25px;
+    width: auto;
+    border-bottom-color: black !important;
+    border-bottom-width: 3px;
+}
+
+.bx--tabs--scrollable__nav-link{
+  font-size: 25px !important;
+  width: auto !important;
+  border-bottom-color: transparent !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.eventsTabs > h4 {
+  margin: 17px 0;
+}
+
+.icon-down, .icon-up{
+  width: 22px;
+  height: 16px;
+  margin: 0;
+  object-fit: contain;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-down img, .icon-up img{
+  width: 20px;
+}
+
+.headingWithButtons{
+  display: flex;
+  align-items: center;
+}
+
+.headingWithButtons > div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
